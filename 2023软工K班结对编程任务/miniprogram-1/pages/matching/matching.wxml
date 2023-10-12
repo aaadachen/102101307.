@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="title">匹配界面</view>
+  <view class="player">
+    <image class="avatar" src="{{player1.avatarUrl}}"></image>
+    <view class="player-info">
+      <view class="player-id">{{player1.playerId}}</view>
+      <view class="player-name">{{player1.playerName}}</view>
+    </view>
+  </view>
+  <view class="player">
+    <image class="avatar" src="{{player2.avatarUrl}}"></image>
+    <view class="player-info">
+      <view class="player-id">{{player2.playerId}}</view>
+      <view class="player-name">{{player2.playerName}}</view>
+    </view>
+  </view>
+  <button class="match-button" bindtap="startMatch">开始匹配</button>
+  <image src="/images/bg2.jpg" class="background-image" mode="scaleToFill"></image>
+</view>

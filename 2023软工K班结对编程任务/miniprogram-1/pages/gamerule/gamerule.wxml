@@ -1,0 +1,31 @@
+<!--pages/gamerule/gamerule.wxml-->
+<view class="container">
+<view class="rule-container">
+  <text class="title">游戏规则：</text>
+  <text class="guize">1.进入游戏，选择游戏模式后，设置游戏局数和玩家个人筹码数
+2.每一局游戏内有三轮投掷机会，玩家一人一次轮流投掷骰子，每个玩家有5个骰子
+3.前两次投掷骰子之后可以选择锁定0~5个骰子，锁定的骰子位于选定区域不再改变
+4.前两轮每轮投掷结束并在所有玩家锁定骰子后，每位玩家可以选择增加倍率：0，1，2，3。选择完成后进入下一轮。
+5.第三轮投掷结束后，所有玩家的全部骰子自动锁定并进行计分（得分为五个骰子的点数总和+奖励分），得出最终结果，筹码划分。</text>
+  <text class="title">奖励分实例：</text>
+  <text class="guize">1.双对：10分</text>
+  <image src="/images/双对.jpg" class="image" mode="widthFix"></image>
+  <text class="guize">2.三连：10分</text>
+  <image src="/images/三连.jpg" class="image" mode="widthFix"></image>
+  <text class="guize">3.葫芦：20分</text>
+  <image src="/images/葫芦.jpg" class="image" mode="widthFix"></image>
+  <text class="guize">4.四连：40分</text>
+  <image src="/images/四连.jpg" class="image" mode="widthFix"></image>
+  <text class="guize">5.五连：100分</text>
+  <image src="/images/五连.jpg" class="image" mode="widthFix"></image>
+  <text class="guize">6.小顺子：30分</text>
+  <image src="/images/小顺子.jpg" class="image" mode="widthFix"></image>
+  <text class="guize">7.大顺子：60分</text>
+  <image src="/images/大顺子.jpg" class="image" mode="widthFix"></image>
+  <text class="title">结算规则：</text>
+  <text class="guize">1.分数最高的玩家从所有其它玩家手里赢得（二人分差的绝对值）*（总倍率）的筹码。
+2.N局游戏后，筹码最多的玩家获胜。
+3.如若中途有玩家筹码小于等于0，则该玩家被击飞，游戏直接结束</text>
+  <image src="/images/bg3.jpg" class="background-image" mode="scaleToFill"></image>
+</view>
+</view>

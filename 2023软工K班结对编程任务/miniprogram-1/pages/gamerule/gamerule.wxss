@@ -1,0 +1,39 @@
+/* pages/gamerule/gamerule.wxss */
+.rule-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.background-image{
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:cover;
+  background-size:100% 100%;
+  z-index: -1;
+  opacity: 0.5;
+  }
+.image {
+  width: 80%;
+  height: auto;
+  }
+.title{
+  color: rgb(221, 19, 19);
+  font-size: 25px;
+  font-family: "PingFang SC", sans-serif;
+}
+.guize{
+  text-align: left;
+  color:rgb(15, 16, 17);
+  font-size: 18px;
+  font-family: 'SimSun', sans-serif;  /* 设置字体为宋体或者sans-serif（无衬线字体） */
+  font-weight: normal;  /* 设置字体粗细为正常 */
+}

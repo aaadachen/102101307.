@@ -1,0 +1,8 @@
+<!-- mode.wxml -->
+<view class="container">
+  <text class="title">选择游戏模式</text>
+  <button data-mode="local" bindtap="localBattle" class="mode-btn">本地对战</button>
+  <button data-mode="ai" bindtap="aiBattle" class="mode-btn">人机对战</button>
+  <button data-mode="online" bindtap="onlineBattle" class="mode-btn">在线对战(这部分没有连接websocket）</button>
+  <image src="/images/bg2.jpg" class="background-image" mode="scaleToFill"></image>
+</view>

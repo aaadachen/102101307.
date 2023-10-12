@@ -1,0 +1,14 @@
+<view class="container">
+  <text class="title1">游戏局数</text>
+  <picker mode="selector" range="{{roundsArray}}" bindchange="onRoundsChange">
+    <text>{{rounds}}</text>
+  </picker>
+
+  <view class="container">
+  <text class="title2">个人筹码数</text>
+  <input class="input-box" type="number" bindinput="onChipsInput" placeholder="0"></input>
+</view>
+
+  <button class="btn" bindtap="startGame">开始游戏</button>
+  <image src="/images/bg2.jpg" class="background-image" mode="scaleToFill"></image>
+</view>

@@ -1,0 +1,93 @@
+<!--pages/localBattle/localBattle.wxml-->
+<view class="container">
+  <text class="title">本地对战</text>
+  <!-- TODO: 本地对战界面的代码 -->
+  <image src="/images/bg2.jpg" class="background-image" mode="scaleToFill"></image>
+  <image src="/images/骰子.jpg" class="touzi-image" mode="scaleToFill"></image>
+</view>
+
+<view class="container">
+  <text class="title1">玩家一</text>
+  <view class="title2-container">
+    <text class="title2" style="margin-right: 20px;">筹码数：{{chips1}}</text>
+    <text class="title2" >倍率：</text><!--设置倍率选择器-->
+    <picker mode="selector" range="{{multiplierRange1}}" bindchange="bindMultiplierChange1" disabled="{{!isMultiplierEnabled1}}" style="margin-right: 20px;">
+    <view class="picker">
+      {{multiplierArray1[multiplierIndex1]}}
+    </view>
+  </picker>
+  <text class="title2">总倍率：{{finalmagnify1}}</text>
+  </view>
+  <text class="xuandingarea">选定区域</text>
+
+  <view class="selected-area"><!-- 选定区域 -->
+    <!-- 这里可以放置最多5个骰子 -->
+    <block wx:for="{{selectdice1}}" wx:key="index">
+    <image class="dice selected-dice" src="{{item.image}}"></image>
+  </block>
+    <block wx:for="{{selectedDices1}}" wx:key="index">
+    <image class="dice selected-dice" src="{{item.image}}"></image>
+  </block>
+  </view>
+  
+    
+ 
+
+  <text class="touzhi">投掷区域</text>
+  <view class="throw-container"><!-- 投掷区域 -->
+    <!-- 这里可以放置最多5个骰子 -->
+    <block wx:for="{{dices1}}" wx:key="index">
+    <image class="dice" src="{{item.image}}" data-index="{{index}}" bindtap="toggleSelect1" data-selected="{{item.selected}}" animation="{{item.animation}}"></image>
+  </block>
+  </view>
+</view>
+
+<view class="butt"><!--设置三个按钮-->
+  <button class="btn" bindtap="throwDice1" disabled="{{!isRoundOver1}}">开始投掷</button>
+  <button class="btn" bindtap="overround1">结束本轮</button>
+</view>
+
+<view class="jushu">
+  <text class="title3">总局数：{{rounds}}</text>
+  <text class="title3">剩余局数：{{restround}}</text>
+  <text class="title3">第 {{lunnum}} 轮</text>
+</view>
+
+<view class="container">
+  <text class="title1">玩家二</text>
+  <view class="title2-container">
+    <text class="title2" style="margin-right: 20px;">筹码数：{{chips2}}</text>
+    <text class="title2">倍率：</text><!--设置倍率选择器-->
+    <picker mode="selector" range="{{multiplierRange2}}" bindchange="bindMultiplierChange2" disabled="{{!isMultiplierEnabled2}}" style="margin-right: 20px;">
+    <view class="picker">
+      {{multiplierArray2[multiplierIndex2]}}
+    </view>
+  </picker>
+  <text class="title2">总倍率：{{finalmagnify2}}</text>
+  </view>
+  <text class="xuandingarea">选定区域</text>
+  <view class="selected-area"><!-- 选定区域 -->
+    <!-- 这里可以放置最多5个骰子 -->
+    <block wx:for="{{selectdice2}}" wx:key="index">
+    <image class="dice selected-dice" src="{{item.image}}"></image>
+  </block>
+    <block wx:for="{{selectedDices2}}" wx:key="index">
+    <image class="dice selected-dice" src="{{item.image}}"></image>
+  </block>
+  </view>
+  
+    
+  
+  <text class="touzhi">投掷区域</text>
+  <view class="throw-container"><!-- 投掷区域 -->
+    <!-- 这里可以放置最多5个骰子 -->
+    <block wx:for="{{dices2}}" wx:key="index">
+    <image class="dice" src="{{item.image}}" data-index="{{index}}" bindtap="toggleSelect2" data-selected="{{item.selected}}" animation="{{item.animation}}"></image>
+  </block>
+  </view>
+</view>
+
+<view class="butt"><!--设置两个按钮-->
+  <button class="btn" bindtap="throwDice2" disabled="{{!isRoundOver2}}">开始投掷</button>
+  <button class="btn" bindtap="overround2">结束本轮</button>
+</view>

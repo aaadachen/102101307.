@@ -1,0 +1,46 @@
+<!-- pages/ranklist/ranklist.wxml -->
+
+<view class="container">
+  <!-- 操作栏 -->
+  <view class="tab-bar">
+    <!-- 总榜按钮 -->
+    <view
+      class="tab-item"
+      bindtap="switchTab"
+      data-id="0"
+      data-current="{{currentTab}}"
+    >
+      <text
+        class="{{currentTab == 0 ? 'tab-label-selected' : 'tab-label'}}"
+      >总榜</text>
+    </view>
+    <!-- 好友榜按钮 -->
+    <view
+      class="tab-item"
+      bindtap="switchTab"
+      data-id="1"
+      data-current="{{currentTab}}"
+    >
+      <text
+        class="{{currentTab == 1 ? 'tab-label-selected' : 'tab-label'}}"
+      >好友榜</text>
+    </view>
+  </view>
+
+  <!-- 排行榜列表 -->
+  <scroll-view class="rank-list">
+    <block wx:for="{{rankListData}}">
+      <view class="rank-item">
+        <text class="rank">{{index + 1}}</text>
+        <text class="name">{{item.name}}</text>
+        <text class="score">{{item.score}}</text>
+      </view>
+    </block>
+  </scroll-view>
+
+  <!-- 返回按钮 -->
+  <view class="back-button" bindtap="navigateBack">
+    <text class="back-icon">返回</text>
+  </view>
+  <image src="/images/bg3.jpg" class="background-image" mode="scaleToFill"></image>
+</view>

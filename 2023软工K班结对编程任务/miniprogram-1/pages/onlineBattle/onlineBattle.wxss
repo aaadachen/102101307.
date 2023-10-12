@@ -1,0 +1,100 @@
+/* pages/onlineBattle/onlineBattle.wxss */
+.background-image {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:cover;
+  background-size:100% 100%;
+  z-index: -1;/*让背景置于最底部*/
+  opacity: 0.5;/*透明度*/
+  }
+
+  .touzi-image {
+    position: absolute;
+    /*top: 15%;*/
+    /*display: block; /* 将图片转换为块级元素 */
+    top: 0%;
+    right: 1%;
+    width: 19%; /* 设置图片的宽度 */
+    height: 9%; /* 设置图片的高度 */
+    opacity: 0.5;/*透明度*/
+  }
+
+  .title1{
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* 设置与上方元素的间距 */
+    font-size: 24px; /* 设置文字大小为 24px */
+    font-weight: bold; /* 设置文字加粗 */
+    color: #d35e5e; /* 设置文字颜色为 #333333 */
+  }
+  .title2-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .title2{
+    font-size: 20px; /* 设置文字大小为 24px */
+  }
+  .dice1-container{
+    display: flex;
+    align-items: center;
+    width:500px;
+    height: 50px;
+  }
+  .dice2-container{
+    display: flex;
+    align-items: center;
+    width:500px;
+    height: 50px;
+  }
+
+  .throw-container{
+    display: flex;
+    align-items: center;
+    width:500px;
+    height: 50px;
+  }
+
+  .jushu {
+    text-align: center;
+    margin-top: 10%;
+  }
+  .title3 {
+    font-size: 18px;      /* 设置字体大小为 20 像素 */
+    color: rgb(38, 116, 161);
+    margin-right: 20px;
+  }
+  
+  .butt {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    text-align: center;
+  }
+
+  .butt .btn {
+    grid-column: span 1;
+    margin-top: 1%;
+  }
+
+  .xuandingarea{
+    color: #5ed381;
+    font-size: 18px;
+  }
+  .touzhi{
+    color: #4a32d4;
+    font-size: 18px;
+  }
+  .over-btn{
+    /*position: relative;*/
+    margin-top: 30%;  
+    width: 50%;
+    height: 5%; 
+    background-color: #b2b4cf; /* 设置按钮的背景颜色 */
+    color: #FFFFFF; /* 设置按钮的文字颜色 */
+    font-size: 16px; /* 设置按钮的文字大小 */
+    border-radius: 4px; /* 设置按钮的边框圆角 */
+  }

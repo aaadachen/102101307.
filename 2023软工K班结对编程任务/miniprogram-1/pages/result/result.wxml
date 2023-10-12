@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="title">游戏结束</view>
+  <text class="title1">玩家一筹码数：{{overresults1}}</text>
+  <text class="title1">玩家二筹码数：{{overresults2}}</text>
+  <view class="result">{{ gameResult }}</view>
+  <button class="btn" bindtap="backToWelcome">返回首页</button>
+  <button class="btn" bindtap="playAgain">再来一局</button>
+  <image src="/images/bg2.jpg" class="background-image" mode="scaleToFill"></image>
+</view>

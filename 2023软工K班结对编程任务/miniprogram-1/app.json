@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/gamerule/gamerule",
+    "pages/mode/mode",
+    "pages/setting/setting",
+    "pages/localBattle/localBattle",
+    "pages/aiBattle/aiBattle",
+    "pages/matching/matching",
+    "pages/onlineBattle/onlineBattle",
+    "pages/rank/rank",
+    "pages/result/result"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "掷骰子"
+  }
+}

@@ -1,0 +1,8 @@
+<view class="container">
+  <text class="title">欢迎来到游戏</text>
+  <button class="btn" bindtap="goToMode">游戏模式</button>
+  <button class="btn" bindtap="goToGameRule">游戏规则</button>
+  <button class="btn" bindtap="goToRank">游戏排行榜</button>
+  <image src="/images/bg.jpg" class="background-image" mode="scaleToFill"></image>
+  <image src="/images/骰子.jpg" class="touzi-image" mode="scaleToFill"></image>
+</view>
